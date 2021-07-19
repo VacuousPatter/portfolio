@@ -37,7 +37,7 @@ transform: translateY(-2px);
   display: block;
   height: 5px;
   width: 5px;
-  background: #FFD60A;
+  background: #E6B566;
   border-radius: 999rem;
   left: 50%;
   bottom: -5px;
@@ -46,7 +46,7 @@ transform: translateY(-2px);
 }
 
 .link[active]{
-  color: #FFD60A;
+  color: #E6B566;
 }
 
 @media (max-width:950px) {
