@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Instagram",
+    "username": "maycon072003",
+    "url": "https://www.instagram.com/%%username%%",
+    "icon": "mdi:instagram"
+  },
+  {
+    "name": "GitHub",
+    "username": "VacuousPatter",
+    "url": "https://github.com/%%username%%",
+    "icon": "mdi:github"
+  },
+  {
+    "name": "Telegram",
+    "username": "VacuousPatter",
+    "url": "https://t.me/%%username%%",
+    "icon": "mdi:telegram"
+  },
+  {
+    "name": "Whatsapp",
+    "username": "5531997466833",
+    "url": "https://api.whatsapp.com/send?phone=%%username%%",
+    "icon": "mdi:whatsapp"
+  }
+]
