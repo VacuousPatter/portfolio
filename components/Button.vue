@@ -39,6 +39,8 @@ export default {
 
   border-radius: 5px;
   font-weight: 500;
+  transition: transform 0.2s, box-shadow .5s;
+  box-shadow: none;
 }
 
 .button[outlined]{
@@ -47,5 +49,10 @@ export default {
 
 .button[rounded]{
   border-radius: 999rem;
+}
+
+.button:hover{
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 5px #E6B566;
 }
 </style>
