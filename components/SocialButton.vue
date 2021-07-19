@@ -6,6 +6,7 @@
     :href="href"
     :icon="icon"
     :target="blank? '_blank':'_self'"
+    :class="{'show':playAnimation}"
     @mouseenter="onHover()"
     @mouseleave="onLeaveHover()"
   >
@@ -20,6 +21,7 @@
     class="button"
     :to="to"
     :icon="icon"
+    :class="{'show':playAnimation}"
     @mouseenter.native="onHover('router-link')"
     @mouseleave.native="onLeaveHover('router-link')"
   >
@@ -52,14 +54,27 @@ export default {
     blank: {
       type: Boolean,
       default: false
+    },
+    animationDelay: {
+      type: Number,
+      default: 0
     }
   },
+
   data () {
     return {
       labelRef: `label-${Date.now()}`,
-      buttonRef: `button-${Date.now()}`
+      buttonRef: `button-${Date.now()}`,
+      playAnimation: false
     }
   },
+
+  mounted () {
+    setTimeout(() => {
+      this.playAnimation = true
+    }, this.animationDelay)
+  },
+
   methods: {
     onHover (sufix = '') {
       const label = this.$refs[this.labelRef + sufix]
@@ -108,7 +123,10 @@ export default {
   height: 42px;
   width: 42px;
   font-size: 20px;
-  transition: width 0.3s;
+
+  transition: width 0.3s, transform .1s;
+  opacity: 0;
+  transform: translateX(-56px);
 }
 
 .slot-icon{
@@ -126,5 +144,10 @@ span.label{
   transition: all 0.3s;
   font-weight: 400;
   font-size: 1rem;
+}
+
+.button.show{
+  opacity: 1;
+  transform: translateX(0px);
 }
 </style>
