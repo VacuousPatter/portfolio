@@ -1,5 +1,7 @@
 <template>
   <section class="apresentation">
+    <img class="astronauta-no-foguete" src="~/assets/images/astronautas/astronauta-no-foguete.png" height="150px" alt="">
+
     <div class="about-me">
       <div class="social">
         <SocialButton
@@ -60,6 +62,22 @@ export default {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes astronautaAnimation {
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.astronauta-no-foguete{
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  animation: astronautaAnimation 1s 0s infinite alternate;
 }
 
 .apresentation{
