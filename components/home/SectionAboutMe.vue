@@ -79,10 +79,20 @@ section{
   position: relative;
 }
 
+@keyframes AnimationAstronautaLendo {
+  0%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
 .astronauta-lendo{
   position: absolute;
   top: 100px;
   right: 50px;
+  animation: AnimationAstronautaLendo 1s 0s infinite alternate;
 }
 
 .content{
