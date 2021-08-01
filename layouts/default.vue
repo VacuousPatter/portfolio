@@ -2,7 +2,7 @@
   <div id="app" class="center" vs-theme="dark">
     <TemplatesHeader />
 
-    <main class="page">
+    <main>
       <Nuxt />
     </main>
   </div>
