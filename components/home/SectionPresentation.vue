@@ -87,6 +87,7 @@ export default {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .apresentation .about-me{
@@ -134,13 +135,17 @@ export default {
 }
 
 .apresentation .about-me .actions{
-  margin-top: 45px;
+  margin-top: 30px;
   opacity: 0;
   animation: helloAnimation .75s 0.9s 1 forwards;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
+}
+
+.apresentation .about-me .actions > *{
+  margin-top: 15px;
 }
 
 .apresentation .about-me .actions > *:not(:last-child){
@@ -170,7 +175,7 @@ export default {
     justify-content: center;
     align-items: center;
     height: max-content;
-    padding: 50px 25px;
+    padding: 50px 25px 130px 25px;
   }
 
   .apresentation .about-me{
@@ -191,6 +196,17 @@ export default {
     width: 80%;
     max-width: 300px;
     height: auto;
+  }
+}
+
+@media (max-width:650px) {
+  .apresentation{
+    padding-bottom: 200px;
+  }
+
+  .astronauta-no-foguete{
+    bottom: 0px;
+    left: calc(50% - 75px);
   }
 }
 </style>
