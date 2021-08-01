@@ -2,7 +2,7 @@
   <section>
     <Title title="Sobre Mim" />
 
-    <img class="astronauta-lendo" height="150" src="~/assets/images/astronautas/astronauta-lendo.png" alt="">
+    <img :class="{show:animations.showAstronautaLendo}" class="astronauta-lendo" height="150" src="~/assets/images/astronautas/astronauta-lendo.png" alt="">
 
     <div class="content">
       <div class="picture" :class="{show:animations.showPicture}">
@@ -43,7 +43,8 @@ export default {
     return {
       animations: {
         showAboutMe: false,
-        showPicture: false
+        showPicture: false,
+        showAstronautaLendo: false
       },
       intervalCheckScroll: null
     }
@@ -59,13 +60,18 @@ export default {
     this.intervalCheckScroll = setInterval(() => {
       const scroll = document.querySelector('html').scrollTop
 
-      const aboutMeHeight = this.$el.querySelector('.about-me').offsetTop - this.$el.querySelector('.about-me').scrollHeight
-      if (scroll >= aboutMeHeight + 100) {
+      const astronautaLendo = this.$el.querySelector('.astronauta-lendo').offsetTop
+      if (scroll >= (astronautaLendo + 50)) {
+        this.animations.showAstronautaLendo = true
+      }
+
+      const aboutMeHeight = this.$el.querySelector('.about-me').offsetTop
+      if (scroll >= (aboutMeHeight + 50)) {
         this.animations.showAboutMe = true
       }
 
-      const pictureHeight = this.$el.querySelector('.picture').offsetTop - this.$el.querySelector('.picture').scrollHeight
-      if (scroll >= pictureHeight + 100) {
+      const pictureHeight = this.$el.querySelector('.picture').offsetTop
+      if (scroll >= (pictureHeight + 50)) {
         this.animations.showPicture = true
       }
     }, 1000)
@@ -93,6 +99,12 @@ section{
   top: 100px;
   right: 50px;
   animation: AnimationAstronautaLendo 1s 0s infinite alternate;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.astronauta-lendo.show{
+  opacity: 1;
 }
 
 .content{
