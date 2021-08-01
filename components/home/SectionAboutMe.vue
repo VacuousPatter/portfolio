@@ -28,8 +28,6 @@
             <li>Vue.js</li>
           </ul>
         </article>
-
-        <div class="dados" />
       </div>
     </div>
   </section>
@@ -90,7 +88,7 @@ section{
 .content{
   margin-top: 60px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
 }
 
@@ -135,23 +133,42 @@ article ul{
   padding: 0px 50px;
   display: flex;
   flex-flow: row wrap;
+  list-style-position: inside;
 }
 
 article ul li{
   display: list-item;
   width: 50%;
-  padding-left: 10px;
   box-sizing: border-box;
 }
 
 article ul li::marker{
-  content: ">";
+  content: "> ";
   color: var(--primary);
+}
+
+@media (max-width:1050px) {
+  .content{
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .content .about-me{
+    margin-left: 0;
+  }
 }
 
 @media (max-width:680px) {
   .astronauta-lendo{
     right: 10px;
+  }
+
+article ul{
+  padding: 0 25px;
+}
+
+  article ul li{
+    width: 100%;
   }
 }
 
