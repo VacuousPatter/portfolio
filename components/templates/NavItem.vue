@@ -18,11 +18,11 @@ export default {
 <style scoped>
 .link{
   text-decoration: none;
-  color: #DCDAD0;
-  font-weight: 500;
+  color: inherit;
+  font-weight: 400;
+  font-size: 18px;
   margin: 0px 4px;
   padding: 0px 6px;
-  position: relative;
   transition: transform 0.2s;
   position: relative;
 }
@@ -37,7 +37,7 @@ transform: translateY(-2px);
   display: block;
   height: 5px;
   width: 5px;
-  background: #E6B566;
+  background: var(--primary);
   border-radius: 999rem;
   left: 50%;
   bottom: -5px;
@@ -46,21 +46,21 @@ transform: translateY(-2px);
 }
 
 .link[active]{
-  color: #E6B566;
+  color: var(--primary);
 }
 
-@media (max-width:950px) {
+@media (max-width:1150px) {
   .link{
     margin-left: 10px !important;
+  }
+  .link{
+    margin: 5px 0px;
   }
   .link:first-child{
     margin-top: 0px;
   }
-  .link:last-child{
+  .link:nth-last-child(2){
     margin-bottom: 0px;
-  }
-  .link{
-    margin: 5px 0px;
   }
   .link[active]::after{
     left: -5px;

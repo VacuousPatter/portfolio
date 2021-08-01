@@ -20,6 +20,6 @@ export default {
 
 <style>
 html{
-  min-height: 1000vh;
+  min-height: 100vh;
 }
 </style>

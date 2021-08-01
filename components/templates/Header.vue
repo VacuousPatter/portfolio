@@ -4,7 +4,7 @@
       <div class="name">
         <nuxt-link class="link-name" to="/">
           <span>
-            <strong>Maycon</strong> Pinto
+            <strong>Maycon</strong> Jesus Pinto
           </span>
         </nuxt-link>
       </div>
@@ -13,21 +13,22 @@
       </button>
       <nav ref="nav">
         <div class="nav-wrapper">
-          <TemplatesNavItem to="/sobre" @closeNav="closeNav">
+          <TemplatesNavItem to="/#sobre" @closeNav="closeNav">
             Sobre
           </TemplatesNavItem>
-          <TemplatesNavItem to="/servicos" @closeNav="closeNav">
+          <TemplatesNavItem to="/#servicos" @closeNav="closeNav">
             Serviços
           </TemplatesNavItem>
-          <TemplatesNavItem to="/conhecimentos" @closeNav="closeNav">
-            Conhecimentos
+          <TemplatesNavItem to="/#skills" @closeNav="closeNav">
+            Skills
           </TemplatesNavItem>
-          <TemplatesNavItem to="/projetos" @closeNav="closeNav">
-            Projetos
+          <TemplatesNavItem to="/trabalhos" @closeNav="closeNav">
+            Trabalhos
           </TemplatesNavItem>
           <TemplatesNavItem to="/contato" @closeNav="closeNav">
             Contato
           </TemplatesNavItem>
+          <hr>
         </div>
       </nav>
     </div>
@@ -87,11 +88,16 @@ export default {
 
 <style scoped>
 header{
-  background-color: #000814;
-  color: #f0efeb;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  background-color: rgba(0,0,0,.3);
+  backdrop-filter: blur(6px);
 }
 
 .header-wrapper{
@@ -103,7 +109,7 @@ header{
 }
 
 header .name{
-  font-size: 1.2rem;
+  font-size: 24px;
 }
 
 header .name .link-name{
@@ -120,11 +126,15 @@ nav{
   flex-flow: row nowrap;
 }
 
+.nav-wrapper>hr{
+  display: none;
+}
+
 button.menu{
   display: none;
   background: none;
   border: none;
-  color: #FFC300;
+  color: var(--primary);
   background: transparent;
 
   padding: 0px;
@@ -137,9 +147,9 @@ button.menu{
   margin-left: auto;
 }
 
-@media (max-width:950px) {
+@media (max-width:1150px) {
   .header-wrapper{
-    padding: 12px 15px;
+    padding: 14px 15px;
     flex-flow: row wrap;
   }
 
@@ -156,8 +166,19 @@ button.menu{
   .nav-wrapper{
     width: 75vw;
     flex-flow: column nowrap;
-    padding: 10px 0px;
-    padding-top: 10px;
+    padding: 0px 0px;
+    padding-top: 20px;
+  }
+
+  .nav-wrapper>hr{
+    display: block;
+    width: 80%;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 999rem;
+    border: none;
+    margin-top: 14px;
+    margin-bottom: 0px;
   }
 }
 </style>

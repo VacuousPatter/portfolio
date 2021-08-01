@@ -1,0 +1,142 @@
+<template>
+  <section>
+    <Title title="Sobre Mim" />
+
+    <div class="content">
+      <div class="picture" :class="{show:animations.showPicture}">
+        <img src="~/assets/images/eu-sobre-mim.png" alt="">
+      </div>
+      <div class="about-me" :class="{show:animations.showAboutMe}">
+        <article>
+          <h3>
+            Olá, tudo bem?
+          </h3>
+          <p>
+            Olá! Me chamo Maycon e gosto de criar coisas para a internet, principalmente websites.
+            Meu interesse por desenvolvimento WEB começou em 2018 quando eu precisava de um site para um chatbot do discord que eu tinha desenvolvido, e desde então eu venho me aprimorando.
+          </p>
+
+          <p>Aqui estão algumas tecnologias com as quais tenho trabalhado recentemente:</p>
+
+          <ul>
+            <li>JavaScript (ES6+)</li>
+            <li>Mysql</li>
+            <li>Node.js</li>
+            <li>Typescript</li>
+            <li>Vue.js</li>
+          </ul>
+        </article>
+
+        <div class="dados" />
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import Title from '../templates/Title.vue'
+
+export default {
+  components: { Title },
+
+  data () {
+    return {
+      animations: {
+        showAboutMe: false,
+        showPicture: false
+      },
+      intervalCheckScroll: null
+    }
+  },
+
+  beforeDestroy () {
+    if (this.intervalCheckScroll) {
+      clearInterval(this.intervalCheckScroll)
+    }
+  },
+
+  mounted () {
+    this.intervalCheckScroll = setInterval(() => {
+      const scroll = document.querySelector('html').scrollTop
+
+      const aboutMeHeight = this.$el.querySelector('.about-me').offsetTop - this.$el.querySelector('.about-me').scrollHeight
+      if (scroll >= aboutMeHeight + 100) {
+        this.animations.showAboutMe = true
+      }
+
+      const pictureHeight = this.$el.querySelector('.picture').offsetTop - this.$el.querySelector('.picture').scrollHeight
+      if (scroll >= pictureHeight + 100) {
+        this.animations.showPicture = true
+      }
+    }, 1000)
+  }
+}
+</script>
+
+<style scoped>
+section{
+  padding: 50px 25px;
+}
+
+.content{
+  margin-top: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.picture{
+  opacity: 0;
+  transform: translateX(-25px);
+  transition: all 0.3s;
+}
+.picture.show{
+  opacity: 1;
+  transform: translate(0);
+}
+
+.picture > img{
+  height: 500px;
+}
+
+.about-me{
+  margin-left: 50px;
+  max-width: 791px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.about-me.show{
+  transform: translate(0);
+  opacity: 1;
+}
+
+h3{
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0px 0px 10px 0px;
+}
+
+article p{
+  margin: 0px 0px 10px 0px;
+}
+
+article ul{
+  margin-top: 25px;
+  padding: 0px 50px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+article ul li{
+  display: list-item;
+  width: 50%;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+article ul li::marker{
+  content: ">";
+  color: var(--primary);
+}
+</style>

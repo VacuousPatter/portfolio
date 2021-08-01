@@ -1,7 +1,19 @@
 <template>
-  <Tutorial />
+  <div>
+    <HomeSectionPresentation />
+    <HomeSectionAboutMe id="sobre" />
+    <HomeSectionServices id="servicos" />
+    <HomeSectionSkills id="skills" />
+  </div>
 </template>
 
 <script>
-export default {}
+
+export default {
+
+}
 </script>
+
+<style scoped>
+
+</style>

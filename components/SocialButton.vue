@@ -107,11 +107,10 @@ export default {
 
 <style scoped>
 .button{
-  color: #F0EFEB;
-  background: #000814;
+  color: inherit;
   text-decoration: none;
 
-  border: 2px solid #E6B566;
+  border: 2px solid var(--primary);
   border-radius: 999rem;
 
   display: flex;
@@ -120,9 +119,9 @@ export default {
   justify-content: flex-start;
   box-sizing: border-box;
 
-  height: 42px;
-  width: 42px;
-  font-size: 20px;
+  height: 48px;
+  width: 48px;
+  font-size: 24px;
 
   transition: width 0.3s, transform .1s;
   opacity: 0;
@@ -130,8 +129,8 @@ export default {
 }
 
 .slot-icon{
-  height: 38px;
-  width: 38px;
+  height: 44px;
+  width: 44px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
