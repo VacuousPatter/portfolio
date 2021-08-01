@@ -2,7 +2,9 @@
   <section>
     <Title title="Serviços" />
     <div class="container">
-      <HomeServiceCard v-for="(service,i) in services" :key="i" :service="service" />
+      <HomeServiceCard v-for="(service,i) in services" :key="i" :service="service">
+        <img v-if="i===0" class="astronauta-business" src="~/assets/images/astronautas/astronauta-business.png" alt="Astronauta Business" height="150">
+      </HomeServiceCard>
     </div>
   </section>
 </template>
@@ -79,5 +81,18 @@ section{
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+}
+
+.astronauta-business{
+  position: absolute;
+  top: -165px;
+  left: -20px;
+}
+
+@media (max-width:550px) {
+  .astronauta-business{
+    height: 100px;
+    top: -115px;
+  }
 }
 </style>

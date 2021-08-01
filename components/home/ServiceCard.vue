@@ -1,5 +1,7 @@
 <template>
   <div class="card">
+    <slot name="default" />
+
     <Icon class="icon" :icon="service.icon" />
     <h3>{{ service.name }}</h3>
 
@@ -41,6 +43,7 @@ export default {
   box-sizing: border-box;
   margin: 25px;
   border: 2px solid var(--secondary);
+  position: relative;
 }
 
 .card >*{
