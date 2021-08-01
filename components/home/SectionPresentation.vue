@@ -25,7 +25,7 @@
         Desenvolvedor WEB especialista em SPAs (Single-page applications) e chatbots para diversas plataformas como Twitch, Booyah e Discord.
       </p>
       <div class="actions">
-        <Button rounded color="rgba(255,255,255,.15)" icon="mdi:folder-multiple-outline" to="/projetos">
+        <Button rounded color="rgba(255,255,255,.15)" icon="mdi:folder-multiple-outline" to="/trabalhos">
           Meus Trabalhos
         </Button>
         <Button rounded color="var(--secondary)" icon="mdi:forum-outline" to="/contato">
