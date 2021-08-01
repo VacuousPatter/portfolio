@@ -163,9 +163,9 @@ article ul li::marker{
     right: 10px;
   }
 
-article ul{
-  padding: 0 25px;
-}
+  article ul{
+    padding: 0 25px;
+  }
 
   article ul li{
     width: 100%;
