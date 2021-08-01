@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="picture">
-      <img src="~/assets/images/eu-presentation.png" alt="">
+      <img src="~/assets/images/eu-presentation.png" alt="Foto Maycon Jesus">
     </div>
   </section>
 </template>
