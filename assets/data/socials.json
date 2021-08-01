@@ -1,10 +1,10 @@
 [
   {
-    "id": "instagram",
-    "name": "Instagram",
-    "username": "maycon072003",
-    "url": "https://www.instagram.com/%%username%%",
-    "icon": "mdi:instagram"
+    "id": "likedin",
+    "name": "LinkedIn",
+    "username": "Maycon Jesus",
+    "url": "https://www.linkedin.com/in/maycon-jesus-20b3a6216",
+    "icon": "mdi:linkedin"
   },
   {
     "id": "github",

@@ -41,7 +41,7 @@
 
 <script>
 import { Icon } from '@iconify/vue2'
-import Socials from '~/assets/socials.json'
+import Socials from '~/assets/data/socials.json'
 
 export default {
   components: { Icon },
