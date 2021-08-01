@@ -2,6 +2,8 @@
   <section>
     <Title title="Sobre Mim" />
 
+    <img class="astronauta-lendo" height="150" src="~/assets/images/astronautas/astronauta-lendo.png" alt="">
+
     <div class="content">
       <div class="picture" :class="{show:animations.showPicture}">
         <img src="~/assets/images/eu-sobre-mim.png" alt="">
@@ -76,6 +78,13 @@ export default {
 <style scoped>
 section{
   padding: 50px 25px;
+  position: relative;
+}
+
+.astronauta-lendo{
+  position: absolute;
+  top: 100px;
+  right: 50px;
 }
 
 .content{
@@ -138,5 +147,18 @@ article ul li{
 article ul li::marker{
   content: ">";
   color: var(--primary);
+}
+
+@media (max-width:680px) {
+  .astronauta-lendo{
+    right: 10px;
+  }
+}
+
+@media (max-width:520px) {
+  .astronauta-lendo{
+    top: 550px;
+    z-index: 1;
+  }
 }
 </style>
