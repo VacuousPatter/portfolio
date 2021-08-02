@@ -44,6 +44,12 @@ export default {
   margin: 25px;
   border: 2px solid var(--secondary);
   position: relative;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  border-color: var(--primary);
 }
 
 .card >*{
