@@ -77,6 +77,13 @@ section{
   bottom: -50px;
 }
 
+@media (min-width:1140px) and (max-width:1265px) {
+  .container-skills .astronauta-segurando-estrela{
+    right: -35px;
+    bottom: -50px;
+  }
+}
+
 @media (max-width:700px) {
   .container-skills .astronauta-segurando-estrela{
     height: 100px;
