@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Ensino Médio e Técnico em eletrotécnica integrado",
+    "school": {
+      "name": "IFMG - Campus Conselheiro Lafaiete",
+      "url": "https://www.ifmg.edu.br/conselheirolafaiete"
+    }
+  },
+  {
+    "name": "Udemy - Curso Web Moderno",
+    "url": "https://www.udemy.com/course/curso-web/",
+    "school": {
+      "name": "Udemy",
+      "url": "https://www.udemy.com/pt/"
+    },
+    "professor": {
+      "name": "Leonador Leitão",
+      "url": "https://www.udemy.com/user/leonardomouraleitao/"
+    }
+  }
+]
