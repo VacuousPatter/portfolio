@@ -4,7 +4,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portfolio',
+    title: 'Maycon Jesus Pinto',
+    titleTemplate: '%s - Maycon Jesus Pinto',
     htmlAttrs: {
       lang: 'pt-br'
     },
