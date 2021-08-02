@@ -2,11 +2,11 @@
   <section>
     <Title title="Sobre Mim" />
 
-    <img :class="{show:animations.showAstronautaLendo}" class="astronauta-lendo" height="150" src="~/assets/images/astronautas/astronauta-lendo.png" alt="">
+    <img :class="{show:animations.showAstronautaLendo}" class="astronauta-lendo" height="150" src="~/assets/images/astronautas/astronauta-lendo.png" alt="Astronauta lendo">
 
     <div class="content">
       <div class="picture" :class="{show:animations.showPicture}">
-        <img src="~/assets/images/eu-sobre-mim.png" alt="">
+        <img src="~/assets/images/eu-sobre-mim.png" alt="Foto do Maycon">
       </div>
       <div class="about-me" :class="{show:animations.showAboutMe}">
         <article>

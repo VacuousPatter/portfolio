@@ -1,6 +1,6 @@
 <template>
   <section class="apresentation">
-    <img class="astronauta-no-foguete" src="~/assets/images/astronautas/astronauta-no-foguete.png" height="150px" alt="">
+    <img class="astronauta-no-foguete" src="~/assets/images/astronautas/astronauta-no-foguete.png" height="150px" alt="Astronauta no foguete">
 
     <div class="about-me">
       <div class="social">
