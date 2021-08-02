@@ -11,8 +11,17 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'description', name: 'description', content: 'Me chamo Maycon, sou desenvolvedor WEB especialista em SPA (Single-page applications) e chatbots para diversas plataformas como Twitch, Booyah e Discord.' },
+      { property: 'og:description', content: 'Me chamo Maycon, sou desenvolvedor WEB especialista em SPA (Single-page applications) e chatbots para diversas plataformas como Twitch, Booyah e Discord.' },
+      { property: 'og:locale', content: 'pt_BR' },
+      { property: 'og:title', content: 'Maycon Jesus Pinto' },
+      { property: 'og:site_name', content: 'Maycon Jesus Pinto' },
+      { property: 'og:image', content: 'https://mayconjesus.com/static/og-icon.png' },
+      { property: 'og:image:type', content: 'image/png' },
+      { property: 'og:image:width', content: '639' },
+      { property: 'og:image:height', content: '872' },
+      { property: 'og:type', content: 'website' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
