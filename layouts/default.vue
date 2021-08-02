@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="center" vs-theme="dark">
+  <div id="app">
     <TemplatesHeader />
 
     <main>
