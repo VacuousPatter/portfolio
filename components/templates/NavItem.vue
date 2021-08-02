@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link class="link" :to="to" :active="$route.path === to" @click.native="$emit('closeNav')">
+  <nuxt-link class="link" :to="to" :active="$route.path+$route.hash === to" @click.native="$emit('closeNav')">
     <slot name="default" />
   </nuxt-link>
 </template>
