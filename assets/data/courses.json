@@ -7,14 +7,14 @@
     }
   },
   {
-    "name": "Udemy - Curso Web Moderno",
+    "name": "Curso Web Moderno",
     "url": "https://www.udemy.com/course/curso-web/",
     "school": {
       "name": "Udemy",
       "url": "https://www.udemy.com/pt/"
     },
     "professor": {
-      "name": "Leonador Leitão",
+      "name": "Leonardo Leitão",
       "url": "https://www.udemy.com/user/leonardomouraleitao/"
     }
   }
