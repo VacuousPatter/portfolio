@@ -18,7 +18,7 @@ export default {
       { property: 'og:locale', content: 'pt_BR' },
       { property: 'og:title', content: 'Maycon Jesus Pinto' },
       { property: 'og:site_name', content: 'Maycon Jesus Pinto' },
-      { property: 'og:image', content: 'https://mayconjesus.com/static/og-icon.png' },
+      { property: 'og:image', content: 'https://mayconjesus.com/og-icon.png' },
       { property: 'og:image:type', content: 'image/png' },
       { property: 'og:image:width', content: '639' },
       { property: 'og:image:height', content: '872' },
