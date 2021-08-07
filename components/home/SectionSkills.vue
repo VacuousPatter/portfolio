@@ -19,7 +19,7 @@
           <h3>Skills</h3>
         </div>
         <div class="card-content">
-          <p>Em desenvolvimento...</p>
+          <SkillGroup v-for="(group,i) in skills" :key="i" :skills="group" />
         </div>
       </div>
     </div>
@@ -29,14 +29,17 @@
 <script>
 import Title from '../../components/templates/Title.vue'
 import FormacaoItem from './skills/FormacaoItem.vue'
+import SkillGroup from './skills/SkillGroup.vue'
 import courses from '~/assets/data/courses.json'
+import skills from '~/assets/data/skills.json'
 
 export default {
-  components: { Title, FormacaoItem },
+  components: { Title, FormacaoItem, SkillGroup },
 
   data () {
     return {
       courses,
+      skills,
 
       showAnimation: {
         formacao: false,
@@ -116,5 +119,24 @@ section{
 
 .card .card-title h3{
   margin: 0px;
+}
+
+.card-content{
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.card-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card-content::-webkit-scrollbar-track {
+  background: var(--background2);
+  border-radius: 999rem;
+}
+
+.card-content::-webkit-scrollbar-thumb {
+  background-color: var(--text-secondary);
+  border-radius: 999rem;
 }
 </style>

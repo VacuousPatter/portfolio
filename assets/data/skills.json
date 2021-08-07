@@ -1,0 +1,75 @@
+[
+  {
+    "groupName": "Linguagens",
+    "items": [
+      {
+        "icon": "mdi:language-html5",
+        "name": "HTML 5",
+        "progress": 95
+      },
+      {
+        "icon": "mdi:language-css3",
+        "name": "CSS 3",
+        "progress": 75
+      },
+      {
+        "icon": "mdi:language-javascript",
+        "name": "Javascript",
+        "progress": 95
+      },
+      {
+        "icon": "mdi:language-typescript",
+        "name": "Typescript",
+        "progress": 50
+      },
+      {
+        "icon": "mdi:nodejs",
+        "name": "Node.js",
+        "progress": 75
+      }
+    ]
+  },
+  {
+    "groupName": "Banco de dados",
+    "items": [
+      {
+        "icon": "mdi:database",
+        "name": "Mysql",
+        "progress": 70
+      },
+      {
+        "icon": "mdi:database",
+        "name": "Mongo DB",
+        "progress": 25
+      }
+    ]
+  },
+  {
+    "groupName": "Frameworks front-end",
+    "items": [
+      {
+        "icon": "mdi:vuejs",
+        "name": "Vue.js",
+        "progress": 95
+      },
+      {
+        "icon": "mdi:react",
+        "name": "React",
+        "progress": 10
+      }
+    ]
+  },
+  {
+    "groupName": "Bibliotecas Node.js",
+    "items": [
+      {
+        "name": "Express (servidor web)",
+        "progress": 95
+      },
+      {
+        "name": "Knex (gerenciamento de banco de dados relacional)",
+        "progress": 80
+      }
+    ]
+  }
+]
