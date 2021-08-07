@@ -28,7 +28,6 @@
           <TemplatesNavItem to="/contato" @closeNav="closeNav">
             Contato
           </TemplatesNavItem>
-          <hr>
         </div>
       </nav>
     </div>
@@ -98,6 +97,7 @@ header{
   z-index: 99;
   background-color: rgba(0,0,0,.3);
   backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--primary);
 }
 
 .header-wrapper{
@@ -124,10 +124,6 @@ nav{
 .nav-wrapper{
   display: flex;
   flex-flow: row nowrap;
-}
-
-.nav-wrapper>hr{
-  display: none;
 }
 
 button.menu{
@@ -168,17 +164,6 @@ button.menu{
     flex-flow: column nowrap;
     padding: 0px 0px;
     padding-top: 20px;
-  }
-
-  .nav-wrapper>hr{
-    display: block;
-    width: 80%;
-    height: 2px;
-    background: var(--primary);
-    border-radius: 999rem;
-    border: none;
-    margin-top: 14px;
-    margin-bottom: 0px;
   }
 }
 </style>
