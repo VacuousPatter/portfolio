@@ -120,23 +120,4 @@ section{
 .card .card-title h3{
   margin: 0px;
 }
-
-.card-content{
-  max-height: 60vh;
-  overflow: auto;
-}
-
-.card-content::-webkit-scrollbar {
-  width: 6px;
-}
-
-.card-content::-webkit-scrollbar-track {
-  background: var(--background2);
-  border-radius: 999rem;
-}
-
-.card-content::-webkit-scrollbar-thumb {
-  background-color: var(--text-secondary);
-  border-radius: 999rem;
-}
 </style>
