@@ -1,6 +1,11 @@
 [
   {
     "name": "Ensino Médio e Técnico em eletrotécnica integrado",
+    "studying": true,
+    "years": {
+      "start": "2019",
+      "end": "2021"
+    },
     "school": {
       "name": "IFMG - Campus Conselheiro Lafaiete",
       "url": "https://www.ifmg.edu.br/conselheirolafaiete"
@@ -12,6 +17,10 @@
     "school": {
       "name": "Udemy",
       "url": "https://www.udemy.com/pt/"
+    },
+    "years": {
+      "start": "2019",
+      "end": "2020"
     },
     "professor": {
       "name": "Leonardo Leitão",

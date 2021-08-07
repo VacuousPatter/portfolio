@@ -1,10 +1,10 @@
 <template>
   <div class="list-item">
     <a v-if="course.url" :href="course.url" target="_blank" class="list-item-title">
-      {{ course.name }}
+      {{ course.name }} <span class="caption">({{ course.years.start }} - {{ course.studying? 'agora':course.years.end }})</span>
     </a>
     <p v-else class="list-item-title">
-      {{ course.name }}
+      {{ course.name }} <span class="caption">({{ course.years.start }} - {{ course.studying? 'agora':course.years.end }})</span>
     </p>
 
     <div class="list-item-content">
@@ -77,5 +77,9 @@ p{
 
 .before-point::before{
   content: " • ";
+}
+
+.caption{
+  font-size: 0.7em;
 }
 </style>
