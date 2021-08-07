@@ -29,5 +29,21 @@
     "certificate": {
       "url": "https://www.udemy.com/certificate/UC-f74399fb-c376-42fc-8ca6-0ec226f11aa3/"
     }
+  },
+  {
+    "name": "Curso React",
+    "url": "https://www.udemy.com/course/react-redux-pt/",
+    "school": {
+      "name": "Udemy",
+      "url": "https://www.udemy.com/pt/"
+    },
+    "studying": true,
+    "years": {
+      "start": "2021"
+    },
+    "professor": {
+      "name": "Leonardo Leitão",
+      "url": "https://www.udemy.com/user/leonardomouraleitao/"
+    }
   }
 ]
