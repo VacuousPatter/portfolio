@@ -43,7 +43,6 @@ export default {
   box-sizing: border-box;
   margin: 25px;
   border: 2px solid var(--secondary);
-  position: relative;
   transition: transform 0.3s, border-color 0.3s;
 }
 

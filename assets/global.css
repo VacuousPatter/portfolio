@@ -4,7 +4,7 @@ html {
   --background: #3a4750;
   --background2: #303841;
   --primary: #00b4d8;
-  --secondary: #023e8a;
+  --secondary: #2980b9;
   --text-primary: #eeeeee;
   --text-secondary: #90e0ef;
 }
@@ -16,6 +16,7 @@ button {
 
 body {
   margin: 0px;
-  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  /* background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%); */
+  background: var(--background);
   color: var(--text-primary);
 }

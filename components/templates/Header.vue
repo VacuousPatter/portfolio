@@ -95,7 +95,7 @@ header{
   top: 0px;
   left: 0px;
   z-index: 99;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(58, 71, 80,0.3);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--primary);
 }

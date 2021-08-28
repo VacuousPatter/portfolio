@@ -1,7 +1,5 @@
 <template>
   <section class="apresentation">
-    <img class="astronauta-no-foguete" src="~/assets/images/astronautas/astronauta-no-foguete.png" height="150px" alt="Astronauta no foguete">
-
     <div class="about-me">
       <div class="social">
         <SocialButton
@@ -64,22 +62,6 @@ export default {
   }
 }
 
-@keyframes astronautaAnimation {
-  0%{
-    transform: translateY(10px);
-  }
-  100%{
-    transform: translateY(0);
-  }
-}
-
-.astronauta-no-foguete{
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  animation: astronautaAnimation 1s 0s infinite alternate;
-}
-
 .apresentation{
   height: calc(100vh - 60px);
 
@@ -87,7 +69,7 @@ export default {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  position: relative;
+  background: #3A4750;
 }
 
 .apresentation .about-me{
@@ -202,11 +184,6 @@ export default {
 @media (max-width:650px) {
   .apresentation{
     padding-bottom: 200px;
-  }
-
-  .astronauta-no-foguete{
-    bottom: 0px;
-    left: calc(50% - 75px);
   }
 }
 </style>

@@ -3,8 +3,7 @@
     <Title title="Skills" />
 
     <div class="container">
-      <div class="card container-formacao">
-        <img class="astronauta-lendo" height="100" src="~/assets/images/astronautas/astronauta-lendo-2.png" alt="Astronauta lendo">
+      <div class="card">
         <div class="card-title">
           <h3>Formação</h3>
         </div>
@@ -12,9 +11,7 @@
           <FormacaoItem v-for="(course,i) in courses" :key="i" :course="course" />
         </div>
       </div>
-      <div class="card container-skills">
-        <img class="astronauta-segurando-estrela" height="150" src="~/assets/images/astronautas/astronauta-segurando-estrela.png" alt="Astronauta segurando estrela">
-
+      <div class="card">
         <div class="card-title">
           <h3>Skills</h3>
         </div>
@@ -63,38 +60,6 @@ section{
   margin-top: 37.5px;
 }
 
-.container-formacao,
-.container-skills{
-  position: relative;
-}
-
-.container-formacao .astronauta-lendo{
-  position: absolute;
-  top: -100px;
-  left: -10px;
-}
-
-.container-skills .astronauta-segurando-estrela{
-  position: absolute;
-  right: -75px;
-  bottom: -50px;
-}
-
-@media (min-width:1140px) and (max-width:1265px) {
-  .container-skills .astronauta-segurando-estrela{
-    right: -35px;
-    bottom: -50px;
-  }
-}
-
-@media (max-width:700px) {
-  .container-skills .astronauta-segurando-estrela{
-    height: 100px;
-    right: -17px;
-    bottom: 0px;
-  }
-}
-
 .card{
   padding: 25px;
   margin: 12.5px;
@@ -119,5 +84,24 @@ section{
 
 .card .card-title h3{
   margin: 0px;
+}
+
+.card-content{
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.card-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card-content::-webkit-scrollbar-track {
+  background: var(--background2);
+  border-radius: 999rem;
+}
+
+.card-content::-webkit-scrollbar-thumb {
+  background-color: var(--text-secondary);
+  border-radius: 999rem;
 }
 </style>
