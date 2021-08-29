@@ -25,12 +25,12 @@ export default {
 
 <style scoped>
 div{
-  width: max-content;
+  width: fit-content;
   margin: 0 auto;
+  text-align: center;
 }
 
 h2{
-  text-align: center;
   font-size: 36px;
   margin-bottom: 0px;
 }
