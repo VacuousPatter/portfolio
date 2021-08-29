@@ -1,0 +1,58 @@
+[
+  {
+    "id": "email",
+    "name": "E-Mail",
+    "username": "mayconjesus07@gmail.com",
+    "url": "mailto:%%username%%",
+    "icon": "mdi:email",
+    "layout": {
+      "borderBottomColor": "#00b894",
+      "iconBackgroundColor": "#00b894"
+    }
+  },
+  {
+    "id": "whatsapp",
+    "name": "Whatsapp",
+    "usernameDisplay": "+55 31 99746-6833",
+    "username": "5531997466833",
+    "url": "https://api.whatsapp.com/send?phone=%%username%%",
+    "icon": "mdi:whatsapp",
+    "layout": {
+      "borderBottomColor": "#25d356",
+      "iconBackgroundColor": "#25d356"
+    }
+  },
+  {
+    "id": "telegram",
+    "name": "Telegram",
+    "username": "VacuousPatter",
+    "url": "https://t.me/%%username%%",
+    "icon": "mdi:telegram",
+    "layout": {
+      "borderBottomColor": "#0088cc",
+      "iconBackgroundColor": "#0088cc"
+    }
+  },
+  {
+    "id": "instagram",
+    "name": "Instagram",
+    "username": "maycon072003",
+    "url": "https://instagram.com/%%username%%",
+    "icon": "mdi:instagram",
+    "layout": {
+      "borderBottomColor": "linear-gradient(90deg, #FEDA75 0.07%, #FA7E1E 26.64%, #D62976 49.03%, #962FBF 76.12%, #4F5BD5 100.07%)",
+      "iconBackgroundColor": "linear-gradient(45deg, #FEDA75 0.52%, #FA7E1E 25%, #D62976 50%, #962FBF 78.13%, #4F5BD5 100.52%)"
+    }
+  },
+  {
+    "id": "likedin",
+    "name": "LinkedIn",
+    "username": "Maycon Jesus",
+    "url": "https://www.linkedin.com/in/maycon-jesus-20b3a6216",
+    "icon": "mdi:linkedin",
+    "layout": {
+      "borderBottomColor": "#0e76a8",
+      "iconBackgroundColor": "#0e76a8"
+    }
+  }
+]

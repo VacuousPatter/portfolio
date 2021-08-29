@@ -12,26 +12,5 @@
     "username": "VacuousPatter",
     "url": "https://github.com/%%username%%",
     "icon": "mdi:github"
-  },
-  {
-    "id": "instagram",
-    "name": "Instagram",
-    "username": "maycon072003",
-    "url": "https://instagram.com/%%username%%",
-    "icon": "mdi:instagram"
-  },
-  {
-    "id": "telegram",
-    "name": "Telegram",
-    "username": "VacuousPatter",
-    "url": "https://t.me/%%username%%",
-    "icon": "mdi:telegram"
-  },
-  {
-    "id": "whatsapp",
-    "name": "Whatsapp",
-    "username": "5531997466833",
-    "url": "https://api.whatsapp.com/send?phone=%%username%%",
-    "icon": "mdi:whatsapp"
   }
 ]
